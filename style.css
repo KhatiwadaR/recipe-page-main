@@ -1,0 +1,150 @@
+:root {
+    --white: hsl(0, 0%, 100%);
+    --stone-100: hsl(30, 54%, 90%);
+    --stone-150: hsl(30, 18%, 87%);
+    --stone-600: hsl(30, 10%, 34%);
+    --stone-900: hsl(24, 5%, 18%);
+    --brown-800: hsl(14, 45%, 36%);
+    --rose-800: hsl(332, 51%, 32%);
+    --rose-50: hsl(330, 100%, 98%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Outfit', sans-serif;
+    font-size: 16px;
+    color: var(--stone-600);
+    line-height: 1.5;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+main {
+    width: 100%;
+    max-width: 900px;
+    background-color: var(--white);
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.image img {
+    width: 100%;
+}
+
+section {
+    padding: 0 2rem;
+}
+
+h1,
+h2 {
+    font-family: 'Young Serif', serif;
+    font-weight: 400;
+}
+.recipe {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.recipe h1 {
+    font-size: 2rem;
+    color: var(--stone-900);
+}
+
+.preparation-time {
+    background-color: var(--rose-50);
+    padding: 20px 30px;
+    border-radius: 10px;
+}
+
+.preparation-time p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--rose-800);
+}
+
+ul {
+    font-size: 1.2rem;
+    padding-left: 25px;
+}
+
+ul li,
+ol li {
+    padding: 10px 20px 0;
+}
+
+ol {
+    font-size: 1.2rem;
+    list-style-position: outside;
+    padding-left: 25px;
+}
+
+ol li::marker {
+    color: var(--brown-800);
+    font-weight: bold;
+}
+section > h2 {
+    color: var(--brown-800);
+    margin-bottom: 10px;
+}
+
+hr {
+    width: calc(100% - 4rem);
+    border: 1px solid var(--stone-150);
+    align-self: center;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 10px;
+}
+
+td,
+th {
+    border-bottom: 1px solid var(--stone-150);
+    padding: 10px;
+}
+
+.no-border td,
+.no-border th {
+    border-bottom: none;
+}
+
+th {
+    color: var(--brown-800);
+}
+
+@media (min-width: 600px) {
+    body {
+        background-color: var(--stone-100);
+        padding: 5rem;
+    }
+
+    main {
+        border-radius: 20px;
+        padding: 3rem;
+    }
+
+    section {
+        padding: 0;
+    }
+
+    hr {
+        width: 100%;
+    }
+
+    .image img {
+        border-radius: 10px;
+    }
+}
