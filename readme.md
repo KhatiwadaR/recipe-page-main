@@ -7,7 +7,8 @@ This project focuses on structuring content-heavy layouts using semantic HTML an
 
 ## 📸 Screenshot
 
-![Recipe Page](./screenshot-1.png)(./screenshot-2.png)
+![Recipe Page](./screenshot-1.png)
+![Recipe page part 2](./screenshot-2.png)
 
 ---
 
